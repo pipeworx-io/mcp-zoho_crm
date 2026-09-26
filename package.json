@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-zoho_crm",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Zoho CRM MCP Pack — wraps the Zoho CRM API v6",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-87b96662aabb9e2b927ceae55bd16e27d661902d7085f64a64d64d1e6a7f09f8",
-    "sourceCommit": "b0fb3c31386cf0256dcf1e2f1b3440435a87ec35"
+    "sourceHash": "v1-8175372b620d244549c8e7ba00e69ff625b1f750dd14c3350dc5f8d7d4824f61",
+    "sourceCommit": "2cb50b368da3267446f2b6f6a3ddbd3d0eed3d73"
   }
 }
