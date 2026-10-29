@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-zoho_crm",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Zoho CRM MCP Pack — wraps the Zoho CRM API v6",
   "type": "module",
   "main": "lib/index.js",
