@@ -1,0 +1,109 @@
+[
+  {
+    "name": "zoho_list_records",
+    "description": "List records from a Zoho CRM module (e.g., Leads, Contacts, Deals).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "module": {
+          "type": "string",
+          "description": "Module name (e.g., Leads, Contacts, Deals, Accounts)"
+        },
+        "fields": {
+          "type": "string",
+          "description": "Comma-separated field names to return (e.g., \"Last_Name,Email,Phone\"). Defaults to common fields."
+        },
+        "per_page": {
+          "type": "number",
+          "description": "Records per page (max 200, default 20)"
+        },
+        "page": {
+          "type": "number",
+          "description": "Page number (default 1)"
+        }
+      },
+      "required": [
+        "module"
+      ]
+    }
+  },
+  {
+    "name": "zoho_get_record",
+    "description": "Get a single record by ID from a Zoho CRM module.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "module": {
+          "type": "string",
+          "description": "Module name (e.g., Leads, Contacts, Deals)"
+        },
+        "id": {
+          "type": "string",
+          "description": "Record ID"
+        }
+      },
+      "required": [
+        "module",
+        "id"
+      ]
+    }
+  },
+  {
+    "name": "zoho_search_records",
+    "description": "Search records in a Zoho CRM module using criteria.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "module": {
+          "type": "string",
+          "description": "Module name (e.g., Leads, Contacts, Deals)"
+        },
+        "criteria": {
+          "type": "string",
+          "description": "Search criteria (e.g., \"(Last_Name:equals:Smith)\")"
+        },
+        "per_page": {
+          "type": "number",
+          "description": "Records per page (max 200, default 20)"
+        },
+        "page": {
+          "type": "number",
+          "description": "Page number (default 1)"
+        }
+      },
+      "required": [
+        "module",
+        "criteria"
+      ]
+    }
+  },
+  {
+    "name": "zoho_create_record",
+    "description": "Create a new record in a Zoho CRM module.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "module": {
+          "type": "string",
+          "description": "Module name (e.g., Leads, Contacts, Deals)"
+        },
+        "data": {
+          "type": "object",
+          "description": "Record data as key-value pairs (e.g., { \"Last_Name\": \"Smith\", \"Email\": \"john@example.com\" })"
+        }
+      },
+      "required": [
+        "module",
+        "data"
+      ]
+    }
+  },
+  {
+    "name": "zoho_list_modules",
+    "description": "List all available modules in Zoho CRM.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  }
+]

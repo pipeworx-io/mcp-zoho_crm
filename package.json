@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-zoho_crm",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Zoho CRM MCP Pack — wraps the Zoho CRM API v6",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-zoho_crm": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "zoho_crm"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-zoho_crm.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/zoho_crm",
   "pipeworx": {
-    "sourceHash": "v1-8175372b620d244549c8e7ba00e69ff625b1f750dd14c3350dc5f8d7d4824f61",
-    "sourceCommit": "80a4e74332d57cb404fb346e082043e4abd66a8b"
+    "mode": "gateway",
+    "slug": "zoho_crm",
+    "gatewaySlug": "zoho_crm",
+    "sourceHash": "v1-fcd0932c018ad07059e5955e91209d4a59288f157c5565c92e54554cc2be9c75",
+    "sourceCommit": "98853f34516646cb7c4c1460f09249b262c0269e"
   }
 }
