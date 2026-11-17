@@ -1,7 +1,7 @@
 {
   "name": "@pipeworx/mcp-zoho_crm",
-  "version": "0.3.2",
-  "description": "Zoho CRM MCP Pack — wraps the Zoho CRM API v6",
+  "version": "0.3.3",
+  "description": "Unofficial Zoho CRM MCP Pack — wraps the Zoho CRM API v6",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "zoho_crm",
     "gatewaySlug": "zoho_crm",
-    "sourceHash": "v1-8b5772a076689aa3e15cfd673deef075ee4912156b9256a0fedaf549701e9eb2",
-    "sourceCommit": "78b905fa3a6880dfb85c79150f4bffe8cf50ef00"
+    "sourceHash": "v1-79712174376bf9957bc7a57b30355baad72ce420a94843359c60bcd801d51ded",
+    "sourceCommit": "6e7ae693219a515a7ee6dd88d02390ab290fbad3"
   }
 }
